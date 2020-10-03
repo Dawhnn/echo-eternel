@@ -434,9 +434,9 @@ myBot.on('message', data => {
         data.delete();
         if(data.content.startsWith(prefix + 'demanderaid')) {
             data.reply('<@&618698709131198465>')
-            .then(msg => {
-                msg.delete()
-            })
+            //.then(msg => {
+            //    msg.delete()
+            //})
             let hookArgs = data.content.slice(prefix.length + 11).split(";");
             var mess = hook(data.channel,'__**' + hookArgs[0] + '**__', hookArgs[1] + '\n' + '➖➖➖➖➖➖\n' + '**Décollage : ** \n' + hookArgs[2] + '\n' + '➖➖➖➖➖➖\n', 'Demande faite par ' + data.author.username, ListToString([data.author.username]), "", 'https://cdn.discordapp.com/emojis/626928125967597568.png');
             data.channel.send(mess)
