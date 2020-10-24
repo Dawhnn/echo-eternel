@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const myBot = new Discord.Client();
-myBot.login('Njk2ODExODk2NDkzNDQxMTA1.Xpluqg.k5OGvV-xv5G4j49863gYLble8aM');
+myBot.login(process.env.TOKEN);
 
 const prefix = '-';
 var emojiyes = '✅';
