@@ -483,6 +483,7 @@ myBot.on('message', data => {
 
         else{
             let hookArgs = data.content.slice(prefix.length + 8).split(";");
-            var mess = hook(data.channel,'__**' + hookArgs[0] + '**__', hookArgs[1] + '\n' + '➖➖➖➖➖➖\n' + '**Décollage : ** \n' + hookArgs[2] + '\n' + '➖➖➖➖➖➖\n', 'Demande faite par ' + data.author.username, ListToString([data.author.username]), "", "https://cdn.discordapp.com/attachments/626264273651236894/627285109174829056/Fichier_2.png")
+            var mess = hook(data.channel,'__**' + hookArgs[0] + '**__', hookArgs[1] + '\n' + '➖➖➖➖➖➖\n' + '**Décollage : ** \n' + hookArgs[2] + '\n' + '➖➖➖➖➖➖\n', 'Demande faite par ' + data.author.username, ListToString([data.author.username]), "", "https://cdn.discordapp.com/attachments/739532179943719014/855787764837908530/small-logo-bot.jpg
+")
             data.channel.send(mess);
     }}})
